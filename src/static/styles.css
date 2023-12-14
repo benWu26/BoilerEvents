@@ -1,0 +1,24 @@
+
+
+.header{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('MemorialMall.jpeg');
+    background-position: center;
+    background-size: cover;
+
+}
+
+.spacing-2{
+    min-height: 40vh;
+}
+
+.center
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 9rem 4rem;
+    font-size: 100px;
+}
+

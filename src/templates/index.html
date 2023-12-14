@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   Index
+{% endblock %}
+
+{% block main %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th class="text-start">Event</th>
+            <th class="text-start">Organizer</th>
+            <th class="text-end">Time</th>
+            <th class="text-end">link</th>
+            <th class="text-end">description</th>
+            <th class="text-end">type</th>
+        </tr>
+    </thead>
+   <tbody>
+    {%for row in rows%}
+    <tr>
+        <th class="text-start">{{ row['event'] }}</th>
+        <th class="text-start">{{ row['organizer'] }}</th>
+        <th class="text-end">{{ row['time'] }}</th>
+        <th class="text-end"> {{ row['link'] }}</th>
+        <th class="text-end">{{ row['description'] }}</th>
+        <th class="text-end">{{ row['type'] }}</th>
+    </tr>
+    {% endfor %}
+   </tbody>
+</table>
+{% endblock %}
